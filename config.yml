@@ -1,0 +1,19 @@
+title: 'flip image '
+description: >-
+  flip image is a content that contains two images but it only displays one and
+  display the other one when the image is being hover on i,e it flips to the
+  other image while the image is been flip on.
+template:
+  repo: flip-image-template
+  name: flip-image
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
